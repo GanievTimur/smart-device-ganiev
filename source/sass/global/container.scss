@@ -1,5 +1,13 @@
 .container {
-  width: calc(100% - 308px);
+  width: 84%;
   max-width: 1222px;
   margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 87%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 90%;
+  }
 }

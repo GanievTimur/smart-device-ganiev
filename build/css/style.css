@@ -1,5 +1,5 @@
 .container {
-  width: calc(100% - 308px);
+  width: 84%;
   max-width: 1222px;
   margin: 0 auto;
 }
@@ -11,13 +11,17 @@
 }
 
 .header-wrapper {
-  padding: 30px 0 30px 0;
+  padding: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.header-button__wrapper {
+  display: none;
 }
 
 .header-button {
@@ -177,9 +181,14 @@ button,
   display: flex;
 }
 
+.header-logo img {
+  width: 35px;
+}
+
 .header-logo__description {
   margin-left: 15px;
   margin-top: 6px;
+  display: none;
 }
 
 .header-logo__description-title {
@@ -203,7 +212,6 @@ button,
 }
 
 .header-contacts__list {
-  width: 38.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,8 +220,9 @@ button,
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
-  padding-top: 12px;
   margin: 0;
+  margin-right: 3px;
+  margin-top: 2px;
 }
 
 .header-contacts__item a {
@@ -228,8 +237,12 @@ button,
   padding-left: 37px;
 }
 
+.header-contacts__item a span {
+  display: none;
+}
+
 .header-contacts__item:first-child {
-  padding-left: 8px;
+  margin-right: 22px;
 }
 
 .header-contacts__link-mail::before {
@@ -332,3 +345,67 @@ button,
     }
   }
 */
+
+@media (min-width: 768px) {
+  .container {
+    width: 87%;
+  }
+
+  .header-wrapper {
+    padding: 20px 0;
+  }
+
+  .header-logo img {
+    width: 55px;
+  }
+
+  .header-logo__description {
+    display: block;
+  }
+
+  .header-contacts__list {
+    width: auto;
+    padding-top: 7px;
+    margin-right: 13px;
+  }
+
+  .header-contacts__item:first-child {
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  .header-wrapper {
+    padding: 30px 0;
+  }
+
+  .header-button__wrapper {
+    display: inline-block;
+  }
+
+  .header-contacts__list {
+    width: 41%;
+    padding-top: 10px;
+    margin-right: 0;
+  }
+
+  .header-contacts__item a span {
+    display: inline-block;
+  }
+
+  .header-contacts__item:first-child {
+    padding-left: 8px;
+  }
+}
+
+@media (min-width: 1090px) {
+  .header-contacts__list {
+    width: 38.5%;
+    padding-top: 10px;
+    margin-right: 0;
+  }
+}
