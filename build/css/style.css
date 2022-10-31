@@ -1,6 +1,6 @@
 .container {
   width: calc(100% - 308px);
-  max-width: 1920px;
+  max-width: 1222px;
   margin: 0 auto;
 }
 
@@ -8,6 +8,35 @@
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+}
+
+.header-wrapper {
+  padding: 30px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header-button {
+  padding: 10px 17px;
+  margin-right: 60px;
+  margin-top: 6px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  background: inherit;
+  border: 1px solid #f2f5f7;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 *,
@@ -148,10 +177,119 @@ button,
   display: flex;
 }
 
-.header-logo__description-title,
+.header-logo__description {
+  margin-left: 15px;
+  margin-top: 6px;
+}
+
+.header-logo__description-title {
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: #f2f5f7;
+}
+
 .header-logo__description-subtitle {
   margin: 0;
-  color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header-contacts__list {
+  width: 38.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  padding-top: 12px;
+  margin: 0;
+}
+
+.header-contacts__item a {
+  position: relative;
+  text-decoration: none;
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #f2f5f7;
+  padding-left: 37px;
+}
+
+.header-contacts__item:first-child {
+  padding-left: 8px;
+}
+
+.header-contacts__link-mail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/source/img/email-icon.svg");
+  width: 21px;
+  height: 20px;
+}
+
+.header-contacts__link-phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("/source/img/phone-icon.svg");
+  width: 21px;
+  height: 20px;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "";
+  font-display: swap;
+  src: url("../fonts/.woff2") format("woff2"), url("../fonts/.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PTMono-Regular.woff2") format("woff2"), url("../fonts/PTMono-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-display: swap;
 }
 
 /* @mixin hover-focus {

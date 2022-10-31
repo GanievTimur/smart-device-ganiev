@@ -1,3 +1,28 @@
 .header {
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 }
+
+.header-wrapper {
+  padding: 30px 0 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-button {
+  padding: 10px 17px;
+  margin-right: 60px;
+  margin-top: 6px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  background: inherit;
+  border: 1px solid #f2f5f7;
+  border-radius: 3px;
+  cursor: pointer;
+}
