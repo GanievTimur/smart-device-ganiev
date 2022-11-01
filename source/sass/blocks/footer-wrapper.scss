@@ -1,5 +1,13 @@
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    padding-top: 50px;
+  }
 }
