@@ -1,9 +1,12 @@
 .header {
+  position: fixed;
+  width: inherit;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  z-index: 5;
 }
 
 .header-wrapper {
-  padding: 15px 0;
+  padding: 15px 2px;
   display: flex;
   justify-content: space-between;
 

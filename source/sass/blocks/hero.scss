@@ -1,0 +1,131 @@
+.hero {
+  position: relative;
+}
+
+.hero img {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-wrapper {
+  @media (min-width: 1024px) {
+    padding-top: 15.9%;
+    padding-left: 6.5%;
+    padding-bottom: 14.5%;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 23.2%;
+    padding-left: 0;
+    padding-bottom: 26.2%;
+  }
+
+  @media (min-width: 320px) {
+    padding-top: 151px;
+    padding-bottom: 189px;
+  }
+}
+
+.hero-wrapper h1 {
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  color: #f2f5f7;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 32px;
+    font-size: 80px;
+    line-height: 94px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @media (min-width: 320px) {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 7px;
+  }
+}
+
+.hero-wrapper p {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  color: #f2f5f7;
+  font-size: 22px;
+  line-height: 155%;
+
+  @media (min-width: 1024px) {
+    width: 60%;
+    margin-bottom: 44px;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: 320px) {
+    font-size: 14px;
+    margin-bottom: 46px;
+  }
+
+}
+
+.hero-wrapper a {
+  display: inline-block;
+  background: #00b2ff;
+  border-radius: 3px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+
+  @media (min-width: 1024px) {
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 44px;
+    padding: 18px 28px;
+  }
+
+  @media (min-width: 320px) {
+    padding: 12px 38px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+.hero-link__text-tablet {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hero-link__text-mobile {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
