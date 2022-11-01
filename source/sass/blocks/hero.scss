@@ -63,7 +63,6 @@
   font-style: normal;
   font-weight: 400;
   color: #f2f5f7;
-  font-size: 22px;
   line-height: 155%;
 
   @media (min-width: 1024px) {
@@ -74,6 +73,7 @@
   @media (min-width: 768px) {
     width: 100%;
     margin-bottom: 57px;
+    font-size: 22px;
   }
 
   @media (min-width: 320px) {
@@ -90,8 +90,6 @@
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -102,6 +100,8 @@
   }
 
   @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 21px;
     margin-left: 44px;
     padding: 18px 28px;
   }

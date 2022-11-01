@@ -1,0 +1,42 @@
+.footer {
+  background: #041827;
+}
+
+.footer-social__logo {
+  display: flex;
+  margin-bottom: 30px;
+
+  & img {
+    width: 55px;
+  }
+}
+
+.footer-social__logo-description {
+  margin-left: 15px;
+  margin-top: 6px;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.footer-social__logo-description-title {
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 29px;
+  color: #f2f5f7;
+}
+
+.footer-social__logo-description-subtitle {
+  margin: 0;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}

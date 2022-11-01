@@ -1,0 +1,20 @@
+.footer-contacts__list {
+  width: 90%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer-contacts__item {
+  margin-bottom: 10px;
+}
+
+.footer-contacts__item a,
+.footer-contacts__item span {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: rgba(255, 255, 255, 0.7);
+}
