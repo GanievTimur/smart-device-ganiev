@@ -1,0 +1,32 @@
+.about-us {
+  display: flex;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+}
+
+.about-us img {
+  @media (min-width: 1024px) {
+    margin-right: 100px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
+    margin-right: 29px;
+    margin-left: -4px;
+    margin-top: 5px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: 320px) {
+    display: none;
+  }
+}

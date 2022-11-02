@@ -1,0 +1,10 @@
+.products__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

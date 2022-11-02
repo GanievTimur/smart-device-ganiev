@@ -1,0 +1,34 @@
+.products__item {
+  position: relative;
+}
+
+.products__item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: #00b2ff;
+  border-radius: 3px 0 0 0;
+  background-image: url("/source/img/card-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.products__link h3 {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 47px;
+  left: 40px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

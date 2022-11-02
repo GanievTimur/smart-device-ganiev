@@ -1,5 +1,18 @@
 .hero {
   position: relative;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 120px;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: 320px) {
+    margin-bottom: 50px;
+  }
+
 }
 
 .hero img {
@@ -47,6 +60,7 @@
   @media (min-width: 768px) {
     font-size: 64px;
     line-height: 75px;
+    margin-bottom: 0;
   }
 
   @media (min-width: 320px) {
