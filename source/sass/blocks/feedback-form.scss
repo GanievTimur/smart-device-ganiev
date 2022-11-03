@@ -1,6 +1,5 @@
 .feedback-form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   column-gap: 30px;
   row-gap: 20px;
 
@@ -9,7 +8,12 @@
   }
 
   @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
     padding-right: 0;
+  }
+
+  @media (min-width: 320px) {
+    grid-template-columns: 1fr;
   }
 
   & fieldset {
@@ -29,11 +33,8 @@
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 22px;
-  }
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .feedback-form__username input,
@@ -45,21 +46,36 @@
   @media (min-width: 768px) {
     padding: 13px 12px;
   }
+
+  @media (min-width: 320px) {
+    padding: 14px;
+  }
 }
 
 .feedback-form__textarea {
   margin-bottom: 6px;
-  grid-column: 1 / 3;
+
+  @media (min-width: 768px) {
+    grid-column: 1 / 3;
+  }
+
+  @media (min-width: 320px) {
+    grid-column: 1;
+  }
 
   & textarea {
-    height: 155px;
-
     @media (min-width: 1024px) {
       padding: 22px 17px;
     }
 
     @media (min-width: 768px) {
+      height: 155px;
       padding: 32px 13px;
+    }
+
+    @media (min-width: 320px) {
+      height: 180px;
+      padding: 23px 14px;
     }
   }
 }

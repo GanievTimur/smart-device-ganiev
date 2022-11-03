@@ -75,3 +75,12 @@
     margin-bottom: 80px;
   }
 }
+
+.about-us__info-description span {
+  @media (min-width: 768px) {
+    display: inline;
+  }
+  @media (min-width: 320px) {
+    display: none;
+  }
+}

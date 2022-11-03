@@ -9,6 +9,12 @@
 
   @media (min-width: 768px) {
     margin-top: 6px;
+    margin-left: 0;
+  }
+
+  @media (min-width: 320px) {
+    margin-left: 6px;
+    margin-top: 3px;
   }
 
   & input {
@@ -33,7 +39,7 @@
   height: 15px;
   border: 1px solid #ffffff;
   border-radius: 2px;
-  margin-right: 11px;
+  margin-right: 10px;
 }
 
 .checkbox-button:checked + span::before {

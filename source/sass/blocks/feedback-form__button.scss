@@ -1,6 +1,4 @@
 .feedback-form__button button {
-  min-width: 265px;
-  padding: 13px 15px;
   background: #041427;
   border-radius: 3px;
   border: none;
@@ -20,7 +18,15 @@
   }
 
   @media (min-width: 768px) {
+    padding: 13px 15px;
+    min-width: 265px;
     margin-top: 6px;
+  }
+
+  @media (min-width: 320px) {
+    padding: 13px 15px;
+    min-width: 270px;
+    margin-top: -2px;
   }
 }
 

@@ -11,11 +11,23 @@
     padding-top: 45px;
     padding-bottom: 125px;
   }
+
+  @media (min-width: 320px) {
+    padding-top: 45px;
+    padding-bottom: 89px;
+  }
 }
 
 .feedback__wrapper {
   display: flex;
-  justify-content: space-between;
+
+  @media (min-width: 1024px) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: 320px) {
+    justify-content: center;
+  }
 
   & h2 {
     padding: 0;
@@ -38,6 +50,7 @@
     @media (min-width: 320px) {
       font-size: 30px;
       line-height: 140.62%;
+      margin-bottom: 9px;
     }
   }
 
@@ -63,6 +76,7 @@
     @media (min-width: 320px) {
       font-size: 14px;
       line-height: 134.4%;
+      margin-bottom: 33px;
     }
   }
 }

@@ -4,7 +4,20 @@
   flex-direction: column;
 
   @media (min-width: 1024px) {
+    width: 90%;
     flex-direction: row;
-    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 48px;
+    padding-bottom: 52px;
+    max-width: 1222px;
+    margin: 0 auto;
+    width: 87%;
+  }
+
+  @media (min-width: 320px) {
+    padding-top: 35px;
   }
 }

@@ -18,7 +18,9 @@
 }
 
 .footer-sections__item {
-  margin-bottom: 10px;
+  @media (min-width: 768px) {
+    margin-bottom: 6px;
+  }
 }
 
 .footer-sections__item a {
@@ -29,3 +31,4 @@
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
 }
+

@@ -4,7 +4,20 @@
 
 .footer-social__logo {
   display: flex;
-  margin-bottom: 30px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 320px) {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
 
   & img {
     width: 55px;
@@ -14,11 +27,6 @@
 .footer-social__logo-description {
   margin-left: 15px;
   margin-top: 6px;
-  display: none;
-
-  @media (min-width: 768px) {
-    display: block;
-  }
 }
 
 .footer-social__logo-description-title {
