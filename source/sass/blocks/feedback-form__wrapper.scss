@@ -1,0 +1,10 @@
+.feedback-form__wrapper {
+  @media (min-width: 1024px) {
+    width: initial;
+    min-width: 596px;
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+}

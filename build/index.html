@@ -136,6 +136,40 @@
         </div>
       </section>
 
+      <section class="feedback">
+        <div class="feedback__wrapper container">
+          <div class="feedback__image">
+            <img src="./img/paper-airplane-image.png" alt="Картинка бумажного самолета" width="510" height="285">
+          </div>
+          <div class="feedback-form__wrapper">
+            <h2 class="feedback-form__title">Остались вопросы? Задайте их нам!</h2>
+            <p class="feedback-form__info">Мы проконсультируем Вас бесплатно</p>
+            <form action="#" method="post" class="feedback-form">
+              <fieldset class="feedback-form__username">
+                <label for="name-form"></label>
+                <input type="text" name="name" class="feedback-form__username-button" id="name-form" placeholder="Имя" required>
+              </fieldset>
+              <fieldset class="feedback-form__phone">
+                <label for="phone-form"></label>
+                <input type="tel" name="phone" class="feedback-form__phone-button" id="phone-form" placeholder="Телефон" required>
+              </fieldset>
+              <fieldset class="feedback-form__textarea">
+                <label class="feedback-form__textarea-label" for="textarea-form"></label>
+                <textarea name="textarea" cols="30" rows="10" id="textarea-form" placeholder="Ваш вопрос"></textarea>
+              </fieldset>
+              <div class="feedback-form__button">
+                <button type="submit" class="feedback-form__button-submit">Задать вопрос</button>
+              </div>
+              <div class="feedback-form__button-checkbox">
+                <input class="checkbox-button" type="checkbox" name="checkbox" id="checkbox-form" required>
+                <span></span>
+                <label for="checkbox-form">Я согласен на обработку<br>персональных данных</label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="footer">

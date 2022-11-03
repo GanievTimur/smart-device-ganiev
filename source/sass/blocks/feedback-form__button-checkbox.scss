@@ -1,0 +1,49 @@
+.feedback-form__button-checkbox {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    margin-left: 11px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 6px;
+  }
+
+  & input {
+    display: none;
+  }
+}
+
+.feedback-form__button-checkbox label {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.feedback-form__button-checkbox span {
+  position: relative;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  margin-right: 11px;
+}
+
+.checkbox-button:checked + span::before {
+  content: "";
+  background-image: url("/source/img/checkbox-check.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 7px;
+}
