@@ -1,5 +1,52 @@
 .products__item {
   position: relative;
+
+  @media (min-width: 1024px) {
+    max-width: inherit;
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 670px;
+  }
+
+  @media (min-width: 320px) {
+    max-width: 270px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+.products__item:nth-child(2) {
+  @media (min-width: 1024px) {
+    margin: 0 20px;
+  }
+}
+
+.products__link-image-desktop {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+}
+
+.products__link-image-tablet {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.products__link-image-mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .products__item::after {
@@ -7,28 +54,54 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 60px;
-  height: 60px;
   background: #00b2ff;
   border-radius: 3px 0 0 0;
   background-image: url("/source/img/card-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+
+  @media (min-width: 320px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .products__link h3 {
   position: absolute;
   padding: 0;
   margin: 0;
-  top: 47px;
-  left: 40px;
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
 
   @media (min-width: 1024px) {
+    width: 54%;
+    top: 47px;
+    left: 40px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 23%;
     font-size: 20px;
+    top: 38px;
+    left: 45px;
+  }
+
+  @media (min-width: 320px) {
+    width: 50%;
+    font-size: 18px;
     line-height: 30px;
+    top: 26px;
+    left: 30px;
   }
 }

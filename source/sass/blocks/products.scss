@@ -5,6 +5,16 @@
     padding-top: 63px;
     padding-bottom: 140px;
   }
+
+  @media (min-width: 768px) {
+    padding-top: 56px;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: 320px) {
+    padding-top: 47px;
+    padding-bottom: 86px;
+  }
 }
 
 .products h2 {
@@ -16,8 +26,31 @@
   color: #ffffff;
 
   @media (min-width: 1024px) {
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: 768px) {
+    display: block;
     font-size: 36px;
     line-height: 51px;
-    margin-bottom: 55px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: 320px) {
+    display: none;
+  }
+}
+
+.products .products__title-mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 320px) {
+    display: block;
+    max-width: 90%;
+    margin-bottom: 29px;
+    font-size: 28px;
+    line-height: 140.62%;
   }
 }
