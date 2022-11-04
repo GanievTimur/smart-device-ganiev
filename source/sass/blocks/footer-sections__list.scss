@@ -15,11 +15,19 @@
     height: 100%;
     min-width: inherit;
   }
+
+  @media (max-width: 767px) {
+    padding: 15px 0 15px 24px;
+  }
 }
 
 .footer-sections__item {
   @media (min-width: 768px) {
     margin-bottom: 6px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
   }
 }
 

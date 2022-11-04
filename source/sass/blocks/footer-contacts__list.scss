@@ -2,11 +2,19 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (max-width: 767px) {
+    padding: 15px 0 15px 24px;
+  }
 }
 
 .footer-contacts__item {
   @media (min-width: 768px) {
     margin-bottom: 6px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
   }
 }
 
