@@ -10,13 +10,14 @@
   }
 
   @media (min-width: 768px) {
-    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 0;
   }
 
   @media (min-width: 320px) {
     justify-content: center;
     margin-bottom: 20px;
+    margin-right: 15px;
   }
 
   & img {
