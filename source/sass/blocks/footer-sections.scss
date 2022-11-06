@@ -1,7 +1,7 @@
 .footer-sections p {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -26,7 +26,7 @@
   position: relative;
   width: 100%;
   padding: 21px 24px;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -47,7 +47,7 @@
 
 .footer-menu__closed button {
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 15px;
     height: 1px;
@@ -58,7 +58,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 1px;
     height: 15px;
@@ -70,7 +70,7 @@
 
 .footer-menu__open button {
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 1px;
     height: 15px;

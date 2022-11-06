@@ -1,4 +1,6 @@
 .feedback-form__wrapper {
+  z-index: 2;
+
   @media (min-width: 1024px) {
     width: initial;
     min-width: 596px;
