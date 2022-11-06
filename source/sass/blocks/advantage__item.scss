@@ -2,6 +2,22 @@
   position: relative;
   border: 1px solid #e5e5e5;
 
+  &:hover {
+    background-color: #00b2ff;
+
+    & svg {
+      fill: #f2f5f7;
+    }
+
+    & h2 {
+      color: #f2f5f7;
+    }
+
+    & p {
+      color: #f2f5f7;
+    }
+  }
+
   @media (min-width: 1024px) {
     padding: 41px 46px;
     min-height: 300px;

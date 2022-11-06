@@ -98,3 +98,9 @@
     display: none;
   }
 }
+
+.footer-menu__closed .no--js {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

@@ -43,7 +43,7 @@
         <div class="hero-wrapper container">
           <h1 class="hero-title">Печатные платы</h1>
           <p class="hero-description">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a href="#" class="hero-link"><span class="hero-link__text-tablet">Получить бесплатную консультацию</span><span class="hero-link__text-mobile">бесплатная консультация</span></a>
+          <a href="#feedback-page" class="hero-link"><span class="hero-link__text-tablet">Получить бесплатную консультацию</span><span class="hero-link__text-mobile">бесплатная консультация</span></a>
         </div>
       </section>
 
@@ -105,6 +105,8 @@
           <h2 class="about-us__info-title">О компании</h2>
           <p class="about-us__info-description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
           <p class="about-us__info-description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span>Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
+          <p class="about-us__info-description info-description__drop-info visually-hidden">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
+            Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
           <button class="about-us__info-button">Подробнее</button>
         </div>
       </section>
@@ -136,7 +138,7 @@
         </div>
       </section>
 
-      <section class="feedback">
+      <section class="feedback" id="feedback-page">
         <div class="feedback__wrapper container">
           <div class="feedback__image">
             <img src="./img/paper-airplane-image.png" alt="Картинка бумажного самолета" width="510" height="285">
@@ -151,7 +153,7 @@
               </fieldset>
               <fieldset class="feedback-form__phone">
                 <label for="phone-form"></label>
-                <input type="tel" name="phone" class="feedback-form__phone-button" id="phone-form" placeholder="Телефон" required>
+                <input type="tel" name="phone" class="feedback-form__phone-button" id="phone-form" data-mask="+7 (000) 000-00-00" placeholder="Телефон" required>
               </fieldset>
               <fieldset class="feedback-form__textarea">
                 <label class="feedback-form__textarea-label" for="textarea-form"></label>
@@ -202,7 +204,7 @@
           <div class="footer-sections footer-menu footer-menu__closed">
             <p>Разделы сайта</p>
             <button class="footer-sections__button">Разделы сайта</button>
-            <ul class="footer-sections__list">
+            <ul class="footer-sections__list no--js">
               <li class="footer-sections__item"><a href="#">О Компании</a></li>
               <li class="footer-sections__item"><a href="#">Продукты</a></li>
               <li class="footer-sections__item"><a href="#">Производство печатных<br>плат</a></li>
@@ -215,7 +217,7 @@
           <div class="footer-contacts footer-menu footer-menu__closed">
             <p>Наш офис</p>
             <button class="footer-contacts__button">Наш офис</button>
-            <ul class="footer-contacts__list">
+            <ul class="footer-contacts__list no--js">
               <li class="footer-contacts__item"><span>г. Мытищи, Олимпийский проспект,<br>д.10</span></li>
               <li class="footer-contacts__item"><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
               <li class="footer-contacts__item"><a href="tel:+79253895829">+7 (925) 389-58-29</a></li>
@@ -226,8 +228,41 @@
       </div>
     </footer>
 
+    <div class="modal visually-hidden">
+      <div class="modal-wrapper">
+        <h2 class="modal-title">Закажите звонок</h2>
+        <p class="modal-info">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form action="#" method="post" class="modal-form">
+          <fieldset class="modal-form__username">
+            <label for="modal-name-form"></label>
+            <input type="text" name="modal-name" class="modal-form__username-button" id="modal-name-form" placeholder="Имя" required>
+          </fieldset>
+          <fieldset class="modal-form__phone">
+            <label for="modal-phone-form"></label>
+            <input type="tel" name="modal-phone" class="modal-form__phone-button" id="modal-phone-form" placeholder="Телефон" required>
+          </fieldset>
+          <fieldset class="modal-form__textarea">
+            <label class="modal-form__textarea-label" for="modal-textarea-form"></label>
+            <textarea name="modal-textarea" cols="30" rows="5" id="modal-textarea-form" placeholder="Ваш вопрос"></textarea>
+          </fieldset>
+          <div class="modal-form__button">
+            <button type="submit" class="modal-form__button-submit">Отправить</button>
+          </div>
+          <div class="modal-form__button-checkbox">
+            <input class="checkbox-button" type="checkbox" name="checkbox" id="modal-checkbox-form" required>
+            <span></span>
+            <label for="modal-checkbox-form">Я согласен на обработку персональных данных</label>
+          </div>
+        </form>
+      </div>
+      <button class="modal-button__close"></button>
+    </div>
+
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/footer-drop-menu.js"></script>
+    <script src="js/about-us-drop.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/tel-mask.js"></script>
   </body>
 </html>

@@ -12,6 +12,7 @@
 
 .about-us img {
   @media (min-width: 1024px) {
+    max-height: 320px;
     margin-right: 100px;
     margin-left: 0;
     margin-top: 0;
@@ -20,6 +21,7 @@
 
   @media (min-width: 768px) {
     display: block;
+    max-height: 382px;
     margin-right: 29px;
     margin-left: -4px;
     margin-top: 5px;

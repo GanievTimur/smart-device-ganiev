@@ -1,4 +1,6 @@
 const dropMenu = document.querySelectorAll('.footer-menu');
+const noJsFooterSections = document.querySelector('.footer-sections__list').classList.remove('no--js');
+const noJsFooterContacts = document.querySelector('.footer-contacts__list').classList.remove('no--js');
 
 dropMenu.forEach((evt) =>
   evt.addEventListener("click", () => {
