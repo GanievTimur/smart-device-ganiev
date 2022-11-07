@@ -1,5 +1,7 @@
 .hero {
   position: relative;
+  background-color: #041827;
+  z-index: -1;
 
   @media (min-width: 1024px) {
     margin-bottom: 120px;
@@ -97,6 +99,7 @@
 
 .hero-wrapper a {
   display: inline-block;
+  vertical-align: middle;
   background: #00b2ff;
   border-radius: 3px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -140,4 +143,3 @@
     display: none;
   }
 }
-
