@@ -13,7 +13,7 @@
 .about-us img {
   @media (min-width: 1024px) {
     max-height: 320px;
-    margin-right: 100px;
+    margin-right: 251px;
     margin-left: 0;
     margin-top: 0;
     padding-bottom: 0;
@@ -94,7 +94,7 @@
   border-radius: 3px;
 
   @media (min-width: 1024px) {
-    margin-top: 43px;
+    margin-top: 24px;
   }
 
   @media (min-width: 768px) {
@@ -121,6 +121,6 @@
   }
 }
 
-.about-us__info .info-description__drop-info {
+.about-us__info .about-us__info-description-drop-info {
   margin-top: 20px;
 }

@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 const modalOpenButton = document.querySelector('.header-button');
 const modal = document.querySelector('.modal');
-const modalCloseButton = document.querySelector('.modal-button__close');
+const modalCloseButton = document.querySelector('.modal__button-close');
 const modalNameInput = document.querySelector('.modal-form__username-button');
 
 modalOpenButton.addEventListener('click', () => {
@@ -119,20 +119,20 @@ const dropMenu = document.querySelectorAll('.footer-menu');
 const noJsFooterSections = document.querySelector('.footer-sections__list');
 const noJsFooterContacts = document.querySelector('.footer-contacts__list');
 
-noJsFooterSections.classList.remove('no--js');
-noJsFooterContacts.classList.remove('no--js');
+noJsFooterSections.classList.remove('footer-sections__list-no--js');
+noJsFooterContacts.classList.remove('footer-contacts__list-no--js');
 
 dropMenu.forEach((evt) =>
   evt.addEventListener('click', () => {
     if (evt.classList.contains('footer-menu__open')) {
       evt.classList.remove('footer-menu__open');
-      evt.classList.add('footer-menu__closed');
+      evt.classList.add('footer__menu-closed');
     } else {
       dropMenu.forEach((event) => {
         event.classList.remove('footer-menu__open');
-        event.classList.add('footer-menu__closed');
+        event.classList.add('footer__menu-closed');
       });
-      evt.classList.remove('footer-menu__closed');
+      evt.classList.remove('footer__menu-closed');
       evt.classList.add('footer-menu__open');
     }
   })
@@ -141,7 +141,7 @@ dropMenu.forEach((evt) =>
 //About us drop menu
 
 let dropButton = document.querySelector('.about-us__info-button');
-let dropInfo = document.querySelector('.info-description__drop-info');
+let dropInfo = document.querySelector('.about-us__info-description-drop-info');
 
 dropButton.addEventListener('click', () => {
   if (dropInfo.classList.contains('visually-hidden')) {

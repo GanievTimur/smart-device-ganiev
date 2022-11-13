@@ -17,23 +17,23 @@
     <header class="header">
       <div class="header-wrapper container">
         <a href="./index.html" class="header-logo">
-          <svg width="55" height="55">
-            <use href="../img/sprite/sprite.svg#logo"></use>
+          <picture>
+            <source media="(min-width: 0)" type="image/webp" srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x">
+            <img src="./img/logo.png" alt="Логотип магазина" width="215" height="55">
+          </picture>
+          <svg width="35" height="35">
+            <use href="../img/sprite/sprite.svg#mobile-logo"></use>
           </svg>
-          <div class="header-logo__description">
-            <p class="header-logo__description-title">Smart Device</p>
-            <p class="header-logo__description-subtitle">умные технологии</p>
-          </div>
         </a>
-        <ul class="header-contacts__list">
-          <li class="header-contacts__item">
-            <a href="mailto:info@sd.ru" class="header-contacts__link-mail"><span>info@sd.ru</span></a>
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item">
+            <a href="mailto:info@sd.ru" class="header__contacts-link-mail"><span>info@sd.ru</span></a>
           </li>
-          <li class="header-contacts__item">
-            <a href="tel:+74950005252" class="header-contacts__link-phone"><span>+7 (495) 000 52 52</span></a>
+          <li class="header__contacts-item">
+            <a href="tel:+74950005252" class="header__contacts-link-phone"><span>+7 (495) 000 52 52</span></a>
           </li>
         </ul>
-        <div class="header-button__wrapper">
+        <div class="header__button-wrapper">
           <button class="header-button" type="button">Заказать звонок</button>
         </div>
       </div>
@@ -91,45 +91,46 @@
       <section class="about-us container">
         <picture>
           <source media="(min-width: 0)" type="image/webp" srcset="./img/year-image.webp 1x, ./img/year-image@2x.webp 2x">
-          <img src="./img/year-image.png" width="320" height="150" alt="Иконка 2022 года">
+          <img src="./img/year-image.png" width="150" height="320" alt="Иконка 2022 года">
         </picture>
         <div class="about-us__info">
           <h2 class="about-us__info-title">О компании</h2>
           <p class="about-us__info-description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
           <p class="about-us__info-description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span>Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
-          <p class="about-us__info-description info-description__drop-info visually-hidden">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
+          <p class="about-us__info-description about-us__info-description-drop-info visually-hidden">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
             Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
           <button type="button" class="about-us__info-button">Подробнее</button>
         </div>
       </section>
 
       <section class="products">
-        <div class="products__wrapper container">
+        <div class="container">
           <h2 class="products__title">Smart Device предлагает следующие товары и услуги</h2>
           <h2 class="products__title-mobile">Товары и услуги Smart Device</h2>
-          <ul class="products__list">
-            <li class="products__item">
-              <a href="#" class="products__link">
-                <h3 class="products__link-title">Производство печатных плат</h3>
-                <img class="products__link-image-desktop" src="./img/production-card-image-desktop.jpg" alt="Производство печатных плат" width="350" height="650">
-                <img class="products__link-image-tablet" src="./img/production-card-image-tablet.jpg" alt="Производство печатных плат" width="670" height="250">
-                <img class="products__link-image-mobile" src="./img/production-card-image-mobile.jpg" alt="Производство печатных плат" width="270" height="250">
-              </a></li>
-            <li class="products__item">
-              <a href="#" class="products__link">
-                <h3 class="products__link-title">Монтаж<br> печатных плат</h3>
-                <img class="products__link-image-desktop" src="./img/accessories-card-image-desktop.jpg" alt="Монтаж печатных плат" width="350" height="650">
-                <img class="products__link-image-tablet" src="./img/accessories-card-image-tablet.jpg" alt="Монтаж печатных плат" width="670" height="250">
-                <img class="products__link-image-mobile" src="./img/accessories-card-image-mobile.jpg" alt="Монтаж печатных плат" width="270" height="250">
-              </a></li>
-            <li class="products__item">
-              <a href="#" class="products__link">
-                <h3 class="products__link-title">Комплектующие для светотехники</h3>
-                <img class="products__link-image-desktop" src="./img/mounting-card-image-desktop.jpg" alt="Комплектующие для светотехники" width="350" height="650">
-                <img class="products__link-image-tablet" src="./img/mounting-card-image-tablet.jpg" alt="Комплектующие для светотехники" width="670" height="250">
-                <img class="products__link-image-mobile" src="./img/mounting-card-image-mobile.jpg" alt="Комплектующие для светотехники" width="270" height="250">
-              </a></li>
-          </ul>
+          <div class="products__wrapper">
+            <picture>
+              <source media="(min-width: 0)" type="image/webp" srcset="./img/main-background-image.webp 1x, ./img/main-background-image@2x.webp 2x">
+              <img src="./img/main-background-image.jpg" alt="Фотография печатных плат" width="1920" height="880">
+            </picture>
+            <ul class="products__list">
+              <li class="products__item">
+                <a href="#" class="products__link">
+                  <h3 class="products__link-title">Производство печатных плат</h3>
+                </a></li>
+                <li class="products__item-separation">
+                  </li>
+              <li class="products__item">
+                <a href="#" class="products__link">
+                  <h3 class="products__link-title">Монтаж<br> печатных плат</h3>
+                </a></li>
+                <li class="products__item-separation">
+                </li>
+              <li class="products__item">
+                <a href="#" class="products__link">
+                  <h3 class="products__link-title">Комплектующие для светотехники</h3>
+                </a></li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -141,9 +142,9 @@
               <img src="./img/paper-airplane-image.png" alt="Картинка бумажного самолета" width="510" height="285">
             </picture>
           </div>
-          <div class="feedback-form__wrapper">
-            <h2 class="feedback-form__title">Остались вопросы? Задайте их нам!</h2>
-            <p class="feedback-form__info">Мы проконсультируем Вас бесплатно</p>
+          <div class="feedback__form-wrapper">
+            <h2 class="feedback__form-title">Остались вопросы? Задайте их нам!</h2>
+            <p class="feedback__form-info">Мы проконсультируем Вас бесплатно</p>
             <form action="#" method="post" class="feedback-form">
               <fieldset class="feedback-form__username form__username">
                 <input type="text" name="name" class="feedback-form__username-button" id="name-form" placeholder="Имя" required>
@@ -173,13 +174,10 @@
       <div class="footer-wrapper">
         <div class="footer-social">
           <a href="./index.html" class="footer-social__logo">
-            <svg width="55" height="55">
-              <use href="../img/sprite/sprite.svg#logo"></use>
-            </svg>
-            <div class="footer-social__logo-description">
-              <p class="footer-social__logo-description-title">Smart Device</p>
-              <p class="footer-social__logo-description-subtitle">умные технологии</p>
-            </div>
+            <picture>
+              <source media="(min-width: 0)" type="image/webp" srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x">
+              <img src="./img/logo.png" alt="Логотип магазина" width="215" height="55">
+            </picture>
           </a>
           <div class="footer-social__links">
             <ul class="footer-social__links-list">
@@ -208,10 +206,10 @@
           </div>
         </div>
         <div class="footer-info-wrapper">
-          <div class="footer-sections footer-menu footer-menu__closed">
+          <div class="footer-sections footer-menu footer__menu-closed">
             <p>Разделы сайта</p>
             <button type="button" class="footer-sections__button">Разделы сайта</button>
-            <ul class="footer-sections__list no--js">
+            <ul class="footer-sections__list footer-sections__list-no--js">
               <li class="footer-sections__item"><a href="#">О Компании</a></li>
               <li class="footer-sections__item"><a href="#">Продукты</a></li>
               <li class="footer-sections__item"><a href="#">Производство печатных<br>плат</a></li>
@@ -221,10 +219,10 @@
               <li class="footer-sections__item"><a href="#">Контакты</a></li>
             </ul>
           </div>
-          <div class="footer-contacts footer-menu footer-menu__closed">
+          <div class="footer-contacts footer-menu footer__menu-closed">
             <p>Наш офис</p>
             <button type="button" class="footer-contacts__button">Наш офис</button>
-            <ul class="footer-contacts__list no--js">
+            <ul class="footer-contacts__list footer-contacts__list-no--js">
               <li class="footer-contacts__item"><span>г. Мытищи, Олимпийский проспект,<br>д.10</span></li>
               <li class="footer-contacts__item"><a href="tel:+74955894050">+7 (495) 589-40-50</a></li>
               <li class="footer-contacts__item"><a href="tel:+79253895829">+7 (925) 389-58-29</a></li>
@@ -259,7 +257,7 @@
           </div>
         </form>
       </div>
-      <button type="button" class="modal-button__close"></button>
+      <button type="button" class="modal__button-close"></button>
     </div>
 
     <script src="js/vendor.min.js"></script>
