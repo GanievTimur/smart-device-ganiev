@@ -41,6 +41,12 @@
   }
 }
 
+.products .products__title-mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
 .products__list {
   padding: 0;
   margin: 0;
@@ -97,6 +103,11 @@
   }
 }
 
+.products__link {
+  margin: 46px 46px 0 41px;
+  display: block;
+}
+
 .products__link h3 {
   padding: 0;
   margin: 0;
@@ -108,10 +119,6 @@
   @media (min-width: 1024px) {
     max-width: 350px;
     max-height: 650px;
-
-    & br {
-      display: none;
-    }
   }
 
   @media (min-width: 768px) {

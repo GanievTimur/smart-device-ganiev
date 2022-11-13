@@ -340,7 +340,7 @@ button {
 .hero {
   position: relative;
   background-color: #041827;
-  z-index: -1;
+  z-index: 1;
 }
 
 .hero img {
@@ -723,6 +723,11 @@ button {
   background-image: url("../img/card-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.products__link {
+  margin: 46px 46px 0 41px;
+  display: block;
 }
 
 .products__link h3 {
@@ -1508,6 +1513,10 @@ button {
     margin-bottom: 38px;
   }
 
+  .products .products__title-mobile {
+    display: none;
+  }
+
   .products__item {
     max-width: 670px;
   }
@@ -1739,10 +1748,6 @@ button {
   .products__link h3 {
     max-width: 350px;
     max-height: 650px;
-  }
-
-  .products__link h3 br {
-    display: none;
   }
 
   .feedback {
