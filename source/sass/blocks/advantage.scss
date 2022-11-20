@@ -1,13 +1,11 @@
 .advantage {
-  @media (min-width: 1024px) {
-    margin-bottom: 120px;
-  }
+  margin-bottom: 120px;
 
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     margin-bottom: 75px;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     margin-bottom: 41px;
   }
 }
@@ -16,14 +14,11 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 
-  @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
-
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     display: block;
   }
 }
@@ -31,6 +26,8 @@
 .advantage__item {
   position: relative;
   border: 1px solid #e5e5e5;
+  padding: 41px 46px;
+  min-height: 300px;
 
   &:hover {
     background-color: #00b2ff;
@@ -48,18 +45,13 @@
     }
   }
 
-  @media (min-width: 1024px) {
-    padding: 41px 46px;
-    min-height: 300px;
-  }
-
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     padding: 40px 43px 30px 43px;
     min-height: 360px;
     margin-bottom: 0;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     padding: 26px 30px 35px;
     min-height: 340px;
     margin-bottom: 30px;
@@ -67,16 +59,13 @@
 
   & svg {
     fill: #00b2ff;
+    margin-bottom: 13px;
 
-    @media (min-width: 1024px) {
-      margin-bottom: 13px;
-    }
-
-    @media (min-width: 768px) {
+    @media (max-width: 1023px) {
       margin-bottom: 8px;
     }
 
-    @media (min-width: 320px) {
+    @media (max-width: 767px) {
       margin-bottom: 7px;
     }
   }
@@ -100,16 +89,13 @@
   font-weight: 400;
   line-height: 140%;
   color: #00b2ff;
+  margin-bottom: 15px;
 
-  @media (min-width: 1024px) {
-    margin-bottom: 15px;
-  }
-
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     font-size: 24px;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 20px;
     margin-bottom: 10px;
   }
@@ -123,12 +109,9 @@
   font-weight: 400;
   line-height: 135%;
   color: #041827;
+  font-size: 16px;
 
-  @media (min-width: 768px) {
-    font-size: 16px;
-  }
-
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 14px;
   }
 }

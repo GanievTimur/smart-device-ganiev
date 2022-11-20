@@ -1,0 +1,8 @@
+.footer-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+}

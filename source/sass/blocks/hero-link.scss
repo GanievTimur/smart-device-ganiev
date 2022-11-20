@@ -1,0 +1,20 @@
+.hero-link:hover {
+  box-shadow: 3px 3px #f2f5f7;
+}
+
+
+.hero-link__text-tablet {
+  display: block;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero-link__text-mobile {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}

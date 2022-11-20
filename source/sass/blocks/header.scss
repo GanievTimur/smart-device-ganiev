@@ -5,29 +5,6 @@
   z-index: 5;
 }
 
-.header-wrapper {
-  padding: 15px 2px;
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: 768px) {
-    padding: 20px 0;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 30px 0;
-  }
-}
-
-.header-button__wrapper {
-  display: none;
-
-  @media (min-width: 1024px) {
-    display: inline-block;
-    vertical-align: middle;
-  }
-}
-
 .header-button {
   padding: 10px 17px;
   margin-right: 60px;
@@ -45,23 +22,9 @@
   border: 1px solid #f2f5f7;
   border-radius: 3px;
   cursor: pointer;
-}
 
-.header-logo {
-  display: flex;
-
-  & img {
-    display: none;
-
-    @media (min-width: 768px) {
-      display: block;
-    }
-  }
-
-  & svg {
-    @media (min-width: 768px) {
-      display: none;
-    }
+  &:hover {
+    box-shadow: 3px 3px #f2f5f7;
   }
 }
 
@@ -71,19 +34,15 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  margin-right: 3px;
   margin-top: 2px;
+  width: 41%;
+  padding-top: 10px;
+  margin-right: 0;
 
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     width: auto;
     padding-top: 7px;
     margin-right: 13px;
-  }
-
-  @media (min-width: 1024px) {
-    width: 41%;
-    padding-top: 10px;
-    margin-right: 0;
   }
 
   @media (min-width: 1090px) {
@@ -107,23 +66,20 @@
 
 .header__contacts-link-mail span,
 .header__contacts-link-phone span {
-  display: none;
+  display: inline-block;
+  vertical-align: middle;
 
-  @media (min-width: 1024px) {
-    display: inline-block;
-    vertical-align: middle;
+  @media (max-width: 1023px) {
+    display: none;
   }
 }
 
 .header__contacts-item:first-child {
   margin-right: 22px;
+  padding-left: 8px;
 
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     margin-right: 24px;
-  }
-
-  @media (min-width: 1024px) {
-    padding-left: 8px;
   }
 }
 
@@ -145,4 +101,9 @@
   background-image: url("../img/phone-icon.svg");
   width: 21px;
   height: 20px;
+}
+
+.header__contacts-link-phone:hover::before,
+.header__contacts-link-mail:hover::before {
+  opacity: 0.5;
 }

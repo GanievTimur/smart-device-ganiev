@@ -1,17 +1,14 @@
 .products {
   background: #041827;
+  padding-top: 67px;
+  padding-bottom: 140px;
 
-  @media (min-width: 1024px) {
-    padding-top: 67px;
-    padding-bottom: 140px;
-  }
-
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     padding-top: 56px;
     padding-bottom: 46px;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     padding-top: 47px;
     padding-bottom: 57px;
   }
@@ -24,26 +21,25 @@
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
+  margin-bottom: 55px;
 
-  @media (min-width: 1024px) {
-    margin-bottom: 55px;
-  }
-
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     display: block;
     font-size: 36px;
     line-height: 51px;
     margin-bottom: 38px;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
 
 .products .products__title-mobile {
-  @media (min-width: 768px) {
-    display: none;
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
   }
 }
 
@@ -55,26 +51,23 @@
   height: 100%;
   width: 100%;
   list-style-type: none;
+  display: flex;
 
-  @media (min-width: 1024px) {
-    display: flex;
+  @media (max-width: 1023px) {
+    flex-direction: column;
   }
 }
 
 .products__item {
   position: relative;
+  max-width: inherit;
+  margin: 0;
 
-  @media (min-width: 1024px) {
-    width: 350px;
-    max-width: inherit;
-    margin: 0;
-  }
-
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     max-width: 670px;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     max-width: 270px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -91,13 +84,10 @@
   background-image: url("../img/card-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
+  width: 60px;
+  height: 60px;
 
-  @media (min-width: 768px) {
-    width: 60px;
-    height: 60px;
-  }
-
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     width: 40px;
     height: 40px;
   }
@@ -115,17 +105,11 @@
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
+  max-width: 350px;
+  max-height: 650px;
+  font-size: 20px;
 
-  @media (min-width: 1024px) {
-    max-width: 350px;
-    max-height: 650px;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 20px;
-  }
-
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 18px;
     line-height: 30px;
   }
@@ -133,11 +117,4 @@
 
 .products__wrapper {
   position: relative;
-}
-
-.products__item-separation {
-  width: 7%;
-  height: 100%;
-  background: #041827;
-  border: 2px solid #041827;
 }

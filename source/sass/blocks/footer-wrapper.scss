@@ -1,0 +1,17 @@
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 0;
+  max-width: 1222px;
+  margin: 0 auto;
+
+  @media (max-width: 1023px) {
+    padding-top: 48px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 35px;
+    flex-direction: column;
+  }
+}

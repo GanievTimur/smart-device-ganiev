@@ -1,0 +1,57 @@
+.modal-form__textarea {
+  margin-bottom: 6px;
+
+  & textarea {
+    padding: 22px 14px;
+  }
+}
+
+.modal-form__button button {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 17px;
+  background: #041427;
+  border-radius: 3px;
+  border: none;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.modal-form__button-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 11px;
+
+  & input {
+    display: none;
+  }
+}
+
+.modal-form__button-checkbox label {
+  padding-left: 25px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.modal-form__button-checkbox span {
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  margin-right: 10px;
+}

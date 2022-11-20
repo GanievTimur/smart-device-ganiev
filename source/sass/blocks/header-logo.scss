@@ -1,0 +1,19 @@
+.header-logo {
+  display: flex;
+
+  & img {
+    display: block;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  & svg {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+}

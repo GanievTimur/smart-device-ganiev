@@ -1,0 +1,11 @@
+.footer-menu__open button {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    right: 32px;
+    background: #c4c4c4;
+    transform: rotate(90deg);
+  }
+}

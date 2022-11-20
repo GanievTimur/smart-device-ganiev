@@ -1,34 +1,29 @@
 .about-us {
   display: flex;
+  margin-bottom: 99px;
 
-  @media (min-width: 1024px) {
-    margin-bottom: 99px;
-  }
-
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     margin-bottom: 80px;
   }
 }
 
 .about-us img {
-  @media (min-width: 1024px) {
-    max-height: 320px;
-    margin-right: 251px;
-    margin-left: 0;
-    margin-top: 0;
-    padding-bottom: 0;
-  }
+  max-height: 320px;
+  margin-right: 251px;
+  margin-left: 0;
+  margin-top: 0;
+  padding-bottom: 0;
 
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     display: block;
     max-height: 382px;
-    margin-right: 29px;
+    margin-right: 129px;
     margin-left: -4px;
     margin-top: 5px;
     padding-bottom: 55px;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -41,13 +36,10 @@
   font-weight: 400;
   line-height: 51px;
   color: #041827;
+  font-size: 36px;
+  margin-bottom: 12px;
 
-  @media (min-width: 768px) {
-    font-size: 36px;
-    margin-bottom: 12px;
-  }
-
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 28px;
     margin-bottom: 7px;
   }
@@ -60,18 +52,15 @@
   font-style: normal;
   font-weight: 400;
   color: #041827;
+  margin-bottom: 21px;
 
-  @media (min-width: 1024px) {
-    margin-bottom: 21px;
-  }
-
-  @media (min-width: 768px) {
+  @media (max-width: 1023px) {
     line-height: 22px;
     font-size: 16px;
     margin-bottom: 16px;
   }
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     font-size: 14px;
     line-height: 134.4%;
 
@@ -92,18 +81,15 @@
   background: inherit;
   border: 1px solid #00b2ff;
   border-radius: 3px;
+  padding: 13px 49px;
+  margin-top: 16px;
+  margin-bottom: 0;
 
-  @media (min-width: 1024px) {
-    margin-top: 24px;
+  &:hover {
+    box-shadow: 3px 3px #00b2ff;
   }
 
-  @media (min-width: 768px) {
-    padding: 13px 49px;
-    margin-top: 16px;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     padding: 9px 40px;
     font-size: 14px;
     margin-top: 13px;
@@ -112,11 +98,9 @@
 }
 
 .about-us__info-description span {
-  @media (min-width: 768px) {
-    display: inline;
-  }
+  display: inline;
 
-  @media (min-width: 320px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
