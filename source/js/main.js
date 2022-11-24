@@ -119,8 +119,8 @@ const dropMenu = document.querySelectorAll('.footer-menu');
 const noJsFooterSections = document.querySelector('.footer-sections__list');
 const noJsFooterContacts = document.querySelector('.footer-contacts__list');
 
-noJsFooterSections.classList.remove('footer-sections__list-no--js');
-noJsFooterContacts.classList.remove('footer-contacts__list-no--js');
+noJsFooterSections.classList.remove('footer-sections__list--no-js');
+noJsFooterContacts.classList.remove('footer-contacts__list--no-js');
 
 dropMenu.forEach((evt) =>
   evt.addEventListener('click', () => {

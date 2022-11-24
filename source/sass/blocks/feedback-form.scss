@@ -4,6 +4,7 @@
   row-gap: 20px;
   padding-right: 8px;
   grid-template-columns: 1fr 1fr;
+  min-width: 575px;
 
   @media (max-width: 1023px) {
     padding-right: 0;
@@ -11,6 +12,7 @@
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
+    min-width: inherit;
   }
 
   & fieldset {

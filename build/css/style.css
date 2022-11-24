@@ -548,10 +548,6 @@ button {
 .products__list {
   padding: 0;
   margin: 0;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,6 +558,26 @@ button {
   position: relative;
   max-width: inherit;
   margin: 0;
+}
+
+.products__item picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  z-index: 0;
+}
+
+.products__item:not(:last-child) {
+  margin-right: 85px;
 }
 
 .products__item::after {
@@ -579,19 +595,28 @@ button {
 }
 
 .products__link {
-  margin: 46px 46px 0 41px;
-  display: block;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
 }
 
 .products__link h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  z-index: 1;
   padding: 0;
-  margin: 0;
+  margin: 50px 40px 60px 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
-  max-width: 350px;
-  max-height: 650px;
   font-size: 20px;
 }
 
@@ -745,6 +770,7 @@ button {
   padding-right: 8px;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  min-width: 575px;
 }
 
 .feedback-form fieldset {
@@ -1395,10 +1421,25 @@ button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .products__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
   }
 
   .products__item {
     max-width: 670px;
+  }
+
+  .products__link-image {
+    width: 670px;
+    height: 250px;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 
   .feedback {
@@ -1593,7 +1634,6 @@ button {
   }
 
   .products__item {
-    max-width: 270px;
     margin: 0 auto;
     margin-bottom: 30px;
   }
@@ -1634,6 +1674,7 @@ button {
   .feedback-form {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    min-width: inherit;
   }
 
   .feedback-form__textarea {
