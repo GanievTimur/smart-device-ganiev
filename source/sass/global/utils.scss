@@ -16,7 +16,7 @@
   background: rgba(4, 20, 39, 0.15);
   border: none;
   border-radius: 3px;
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: "PT Mono", "Arial", monospace;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -26,7 +26,6 @@
   &:hover {
     box-shadow: 3px 3px #f2f5f7;
   }
-
 }
 
 .form__username input,

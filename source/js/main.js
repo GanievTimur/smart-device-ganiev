@@ -53,14 +53,18 @@ const modalCloseButton = document.querySelector('.modal__button-close');
 const modalNameInput = document.querySelector('.modal-form__username-button');
 
 modalOpenButton.addEventListener('click', () => {
-  if (modal.classList.contains('visually-hidden')) {
-    modal.classList.remove('visually-hidden');
-    modalNameInput.focus();
+  if (modal.classList.contains('modal')) {
+    if (modal.classList.contains('visually-hidden')) {
+      modal.classList.remove('visually-hidden');
+      modalNameInput.focus();
+    }
   }
 });
 
 modalCloseButton.addEventListener('click', () => {
-  modal.classList.add('visually-hidden');
+  if (modal.classList.contains('modal')) {
+    modal.classList.add('visually-hidden');
+  }
 });
 
 function FormMasked() {
