@@ -44,15 +44,6 @@
   }
 }
 
-.feedback__form-wrapper {
-  z-index: 2;
-  width: initial;
-
-  @media (max-width: 1023px) {
-    width: 100%;
-  }
-}
-
 .feedback-form__button button {
   background: #041427;
   border-radius: 3px;
@@ -88,11 +79,58 @@
 
 .feedback-form__button label {
   width: 30%;
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
   opacity: 0.8;
+}
+
+.feedback-form__button-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 11px;
+  margin-top: 15px;
+
+  &:hover span {
+    box-shadow: 1px 1px #ffffff;
+  }
+
+  @media (max-width: 1023px) {
+    margin-top: 6px;
+    margin-left: 0;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 6px;
+    margin-top: 3px;
+  }
+
+  & input {
+    display: none;
+  }
+}
+
+.feedback-form__button-checkbox label {
+  padding-left: 25px;
+  font-family: "PT Mono", "Courier New", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.feedback-form__button-checkbox span {
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  margin-right: 10px;
 }

@@ -52,20 +52,22 @@ const modal = document.querySelector('.modal');
 const modalCloseButton = document.querySelector('.modal__button-close');
 const modalNameInput = document.querySelector('.modal-form__username-button');
 
-modalOpenButton.addEventListener('click', () => {
-  if (modal.classList.contains('modal')) {
-    if (modal.classList.contains('visually-hidden')) {
-      modal.classList.remove('visually-hidden');
-      modalNameInput.focus();
+if (modal) {
+  modalOpenButton.addEventListener('click', () => {
+    if (modal.classList.contains('modal')) {
+      if (modal.classList.contains('visually-hidden')) {
+        modal.classList.remove('visually-hidden');
+        modalNameInput.focus();
+      }
     }
-  }
-});
+  });
 
-modalCloseButton.addEventListener('click', () => {
-  if (modal.classList.contains('modal')) {
-    modal.classList.add('visually-hidden');
-  }
-});
+  modalCloseButton.addEventListener('click', () => {
+    if (modal.classList.contains('modal')) {
+      modal.classList.add('visually-hidden');
+    }
+  });
+}
 
 function FormMasked() {
   const maskedInputs = document.querySelectorAll('[data-mask]');
@@ -123,36 +125,44 @@ const dropMenu = document.querySelectorAll('.footer-menu');
 const noJsFooterSections = document.querySelector('.footer-sections__list');
 const noJsFooterContacts = document.querySelector('.footer-contacts__list');
 
-noJsFooterSections.classList.remove('footer-sections__list--no-js');
-noJsFooterContacts.classList.remove('footer-contacts__list--no-js');
 
-dropMenu.forEach((evt) =>
-  evt.addEventListener('click', () => {
-    if (evt.classList.contains('footer-menu__open')) {
-      evt.classList.remove('footer-menu__open');
-      evt.classList.add('footer__menu-closed');
-    } else {
-      dropMenu.forEach((event) => {
-        event.classList.remove('footer-menu__open');
-        event.classList.add('footer__menu-closed');
-      });
-      evt.classList.remove('footer__menu-closed');
-      evt.classList.add('footer-menu__open');
-    }
-  })
-);
+if (noJsFooterSections && noJsFooterContacts) {
+  noJsFooterContacts.classList.remove('footer-contacts__list--no-js');
+  noJsFooterSections.classList.remove('footer-sections__list--no-js');
+}
+
+if (dropMenu) {
+  dropMenu.forEach((evt) =>
+    evt.addEventListener('click', () => {
+      if (evt.classList.contains('footer-menu__open')) {
+        evt.classList.remove('footer-menu__open');
+        evt.classList.add('footer__menu-closed');
+      } else {
+        dropMenu.forEach((event) => {
+          event.classList.remove('footer-menu__open');
+          event.classList.add('footer__menu-closed');
+        });
+        evt.classList.remove('footer__menu-closed');
+        evt.classList.add('footer-menu__open');
+      }
+    })
+  );
+}
 
 //About us drop menu
 
+const adoutAsBlock = document.querySelector('.about-us__info');
 let dropButton = document.querySelector('.about-us__info-button');
 let dropInfo = document.querySelector('.about-us__info-description-drop-info');
 
-dropButton.addEventListener('click', () => {
-  if (dropInfo.classList.contains('visually-hidden')) {
-    dropInfo.classList.remove('visually-hidden');
-    dropButton.textContent = 'Свернуть';
-  } else {
-    dropInfo.classList.add('visually-hidden');
-    dropButton.textContent = 'Подробнее';
-  }
-});
+if (adoutAsBlock) {
+  dropButton.addEventListener('click', () => {
+    if (dropInfo.classList.contains('visually-hidden')) {
+      dropInfo.classList.remove('visually-hidden');
+      dropButton.textContent = 'Свернуть';
+    } else {
+      dropInfo.classList.add('visually-hidden');
+      dropButton.textContent = 'Подробнее';
+    }
+  });
+}

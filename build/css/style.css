@@ -22,7 +22,7 @@
   background: rgba(4, 20, 39, 0.15);
   border: none;
   border-radius: 3px;
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -81,30 +81,6 @@
   z-index: 5;
 }
 
-.header-button {
-  padding: 10px 17px;
-  margin-right: 60px;
-  margin-top: 6px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #f2f5f7;
-  background: inherit;
-  border: 1px solid #f2f5f7;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.header-button:hover {
-  -webkit-box-shadow: 3px 3px #f2f5f7;
-  box-shadow: 3px 3px #f2f5f7;
-}
-
 .header__contacts-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +100,7 @@
 .header__contacts-item a {
   position: relative;
   text-decoration: none;
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -451,7 +427,7 @@ button {
 .advantage__item p {
   padding: 0;
   margin: 0;
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   line-height: 135%;
@@ -489,7 +465,7 @@ button {
 .about-us__info p {
   padding: 0;
   margin: 0;
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   color: #041827;
@@ -600,6 +576,11 @@ button {
   display: grid;
 }
 
+.products__link:hover {
+  -webkit-box-shadow: 0 0 10px 2px #ffffff;
+  box-shadow: 0 0 10px 2px #ffffff;
+}
+
 .products__link h3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -655,7 +636,7 @@ button {
 .feedback__wrapper p {
   padding: 0;
   margin: 0;
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
@@ -682,6 +663,11 @@ button {
   background: rgba(4, 24, 39, 0.5);
   -webkit-clip-path: polygon(100% 0, 0 0, 0 157%);
   clip-path: polygon(100% 0, 0 0, 0 157%);
+}
+
+.feedback__form-wrapper {
+  z-index: 2;
+  width: initial;
 }
 
 .modal {
@@ -790,11 +776,6 @@ button {
   height: 155px;
 }
 
-.feedback__form-wrapper {
-  z-index: 2;
-  width: initial;
-}
-
 .feedback-form__button button {
   background: #041427;
   border-radius: 3px;
@@ -821,7 +802,7 @@ button {
 
 .feedback-form__button label {
   width: 30%;
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -853,7 +834,7 @@ button {
 
 .feedback-form__button-checkbox label {
   padding-left: 25px;
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -889,6 +870,10 @@ button {
 .footer-social__logo {
   margin-bottom: 30px;
   margin-right: 0;
+}
+
+.footer-social__logo:hover {
+  opacity: 0.7;
 }
 
 .footer-social {
@@ -1006,12 +991,19 @@ button {
 }
 
 .footer-sections__item a {
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 135%;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-sections__item a:hover {
+  color: #00b2ff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footer-sections {
@@ -1083,7 +1075,7 @@ button {
 
 .footer-contacts__item a,
 .footer-contacts__item span {
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1128,6 +1120,10 @@ button {
   display: flex;
 }
 
+.header-logo:hover {
+  opacity: 0.7;
+}
+
 .header-logo img {
   display: block;
 }
@@ -1158,7 +1154,7 @@ button {
 .hero-wrapper p {
   margin: 0;
   padding: 0;
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   color: #f2f5f7;
@@ -1219,7 +1215,7 @@ button {
   margin: 0;
   padding: 0 25px 0 1px;
   margin-bottom: 36px;
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1270,7 +1266,7 @@ button {
 
 .modal-form__button-checkbox label {
   padding-left: 25px;
-  font-family: "PT Mono", "Arial", monospace;
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -1287,6 +1283,30 @@ button {
   border: 1px solid #ffffff;
   border-radius: 2px;
   margin-right: 10px;
+}
+
+.header-button {
+  padding: 10px 17px;
+  margin-right: 60px;
+  margin-top: 6px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  background: inherit;
+  border: 1px solid #f2f5f7;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  -webkit-box-shadow: 3px 3px #f2f5f7;
+  box-shadow: 3px 3px #f2f5f7;
 }
 
 /* @mixin hover-focus {
@@ -1463,16 +1483,16 @@ button {
     display: none;
   }
 
+  .feedback__form-wrapper {
+    width: 100%;
+  }
+
   .feedback-form {
     padding-right: 0;
   }
 
   .feedback-form__textarea textarea {
     padding: 32px 13px;
-  }
-
-  .feedback__form-wrapper {
-    width: 100%;
   }
 
   .feedback-form__button button {
