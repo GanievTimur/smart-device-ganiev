@@ -71,6 +71,10 @@
 .footer-sections__item {
   margin-bottom: 6px;
 
+  @media (max-width: 1023px) {
+    margin-bottom: 5.5px;
+  }
+
   @media (max-width: 767px) {
     margin-bottom: 15px;
   }

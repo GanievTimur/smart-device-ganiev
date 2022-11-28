@@ -1,6 +1,10 @@
 .footer {
   background: #041827;
   padding-top: 48px;
+
+  @media (max-width: 1023px) {
+    padding-top: 0;
+  }
 }
 
 .footer__menu-closed button {
@@ -10,7 +14,6 @@
     width: 15px;
     height: 1px;
     right: 25px;
-    top: 50%;
     background: #c4c4c4;
     transform: rotate(90deg);
   }

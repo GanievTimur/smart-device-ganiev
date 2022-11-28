@@ -6,6 +6,10 @@
   @media (max-width: 1023px) {
     margin-bottom: 80px;
   }
+
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+  }
 }
 
 .about-us img {
@@ -18,7 +22,7 @@
   @media (max-width: 1023px) {
     display: block;
     max-height: 382px;
-    margin-right: 129px;
+    margin-right: 179px;
     margin-left: -4px;
     margin-top: 5px;
     padding-bottom: 55px;
@@ -58,7 +62,7 @@
   @media (max-width: 1023px) {
     line-height: 22px;
     font-size: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 21px;
   }
 
   @media (max-width: 767px) {
@@ -90,11 +94,14 @@
     box-shadow: 3px 3px #00b2ff;
   }
 
+  @media (max-width: 1023px) {
+    margin-top: -4px;
+  }
+
   @media (max-width: 767px) {
     padding: 9px 40px;
     font-size: 14px;
-    margin-top: 13px;
-    margin-bottom: 80px;
+    margin-bottom: 78px;
   }
 }
 

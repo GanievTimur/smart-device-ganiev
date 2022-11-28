@@ -16,21 +16,30 @@
   padding-top: 10px;
   margin-right: 0;
 
-  @media (max-width: 1023px) {
-    width: auto;
-    padding-top: 7px;
-    margin-right: 13px;
-  }
-
   @media (min-width: 1090px) {
     width: 38.5%;
     padding-top: 10px;
     margin-right: 0;
   }
+
+  @media (max-width: 1023px) {
+    width: auto;
+    padding-top: 4px;
+    margin-right: 6px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 0;
+    margin-right: 5px;
+  }
 }
 
 .header__contacts-item {
   margin-right: 7px;
+
+  @media (max-width: 767px) {
+    margin-right: 0;
+  }
 }
 
 .header__contacts-item a {
@@ -60,6 +69,10 @@
 
   @media (max-width: 1023px) {
     margin-right: 24px;
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 22px;
   }
 }
 

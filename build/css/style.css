@@ -345,7 +345,6 @@ button {
   width: 15px;
   height: 1px;
   right: 25px;
-  top: 50%;
   background: #c4c4c4;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -884,6 +883,7 @@ button {
 .footer-social__logo {
   margin-bottom: 30px;
   margin-right: 0;
+  width: 215px;
 }
 
 .footer-social__logo:hover {
@@ -1385,8 +1385,8 @@ button {
 
   .header__contacts-list {
     width: auto;
-    padding-top: 7px;
-    margin-right: 13px;
+    padding-top: 4px;
+    margin-right: 6px;
   }
 
   .header__contacts-link-mail span,
@@ -1400,6 +1400,10 @@ button {
 
   .hero {
     margin-bottom: 82px;
+  }
+
+  .footer {
+    padding-top: 0;
   }
 
   .advantage {
@@ -1416,8 +1420,13 @@ button {
     margin-bottom: 8px;
   }
 
+  .advantage__item:last-child svg {
+    margin-bottom: 2px;
+  }
+
   .advantage__item h2 {
     font-size: 24px;
+    margin-bottom: 9px;
   }
 
   .about-us {
@@ -1427,7 +1436,7 @@ button {
   .about-us img {
     display: block;
     max-height: 382px;
-    margin-right: 129px;
+    margin-right: 179px;
     margin-left: -4px;
     margin-top: 5px;
     padding-bottom: 55px;
@@ -1436,12 +1445,16 @@ button {
   .about-us__info p {
     line-height: 22px;
     font-size: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 21px;
+  }
+
+  .about-us__info button {
+    margin-top: -4px;
   }
 
   .products {
     padding-top: 56px;
-    padding-bottom: 46px;
+    padding-bottom: 75px;
   }
 
   .products h2 {
@@ -1470,6 +1483,10 @@ button {
     max-width: 670px;
   }
 
+  .products__link h3 {
+    margin: 36px 45px 60px;
+  }
+
   .products__link-image {
     width: 670px;
     height: 250px;
@@ -1488,6 +1505,7 @@ button {
 
   .feedback__wrapper p {
     margin-bottom: 25px;
+    margin-left: 0;
   }
 
   .feedback__image {
@@ -1511,8 +1529,10 @@ button {
   }
 
   .feedback-form__button button {
-    margin-top: 6px;
-    min-width: 270px;
+    margin-left: 0;
+    margin-top: 3px;
+    min-width: 265px;
+    padding: 14px 15px;
   }
 
   .feedback-form__button-checkbox {
@@ -1525,6 +1545,10 @@ button {
   }
 
   .footer-social {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -1538,11 +1562,16 @@ button {
 
   .footer-social__links-item {
     text-align: end;
+    margin-left: 15px;
   }
 
   .footer-sections__list {
     height: 100%;
     min-width: inherit;
+  }
+
+  .footer-sections__item {
+    margin-bottom: 5.5px;
   }
 
   .footer-sections {
@@ -1551,11 +1580,18 @@ button {
   }
 
   .footer-contacts {
-    margin-right: 0;
+    margin-top: 0;
+    margin-right: 13px;
   }
 
   .footer-wrapper {
     padding-top: 48px;
+    padding-bottom: 57px;
+    width: 87%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .header-wrapper {
@@ -1583,6 +1619,10 @@ button {
     margin-bottom: 57px;
     font-size: 22px;
   }
+
+  .hero-wrapper a {
+    margin-left: 44px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1593,6 +1633,19 @@ button {
   .form__username input,
   .form__phone input {
     padding: 14px;
+  }
+
+  .header__contacts-list {
+    padding-top: 0;
+    margin-right: 5px;
+  }
+
+  .header__contacts-item {
+    margin-right: 0;
+  }
+
+  .header__contacts-item:first-child {
+    margin-right: 22px;
   }
 
   .hero {
@@ -1608,22 +1661,47 @@ button {
   }
 
   .advantage__item {
-    padding: 26px 30px 35px;
-    min-height: 340px;
+    padding: 30px 31px 35px 30px;
     margin-bottom: 30px;
+    min-height: 340px;
   }
 
   .advantage__item svg {
-    margin-bottom: 7px;
+    margin-bottom: 8px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .advantage__item:last-child svg {
+    margin-bottom: 10px;
   }
 
   .advantage__item h2 {
     font-size: 20px;
+    line-height: 140%;
     margin-bottom: 10px;
   }
 
   .advantage__item p {
     font-size: 14px;
+    line-height: 135%;
+  }
+
+  .advantage__item-card {
+    font-size: 14px;
+    min-height: 325px;
+  }
+
+  .advantage__item-card svg {
+    margin-bottom: 12px;
+  }
+
+  .advantage__item-card h2 {
+    margin-bottom: 13px;
+  }
+
+  .about-us {
+    margin-bottom: 0;
   }
 
   .about-us img {
@@ -1647,8 +1725,7 @@ button {
   .about-us__info button {
     padding: 9px 40px;
     font-size: 14px;
-    margin-top: 13px;
-    margin-bottom: 80px;
+    margin-bottom: 78px;
   }
 
   .about-us__info-description span {
@@ -1666,6 +1743,10 @@ button {
 
   .products .products__title-mobile {
     display: block;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 140.62%;
+    margin-bottom: 29px;
   }
 
   .products__item {
@@ -1681,6 +1762,7 @@ button {
   .products__link h3 {
     font-size: 18px;
     line-height: 30px;
+    margin: 27px 41px 40px 31px;
   }
 
   .feedback {
@@ -1733,11 +1815,15 @@ button {
   }
 
   .footer-social__logo {
-    margin-bottom: 20px;
-    margin-right: 15px;
+    margin-bottom: 9px;
+    margin-left: 26px;
   }
 
   .footer-social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin: 0 auto;
     margin-bottom: 19px;
     width: 85%;
@@ -1789,11 +1875,16 @@ button {
     flex-direction: column;
   }
 
+  .footer-contacts {
+    margin-right: 0;
+  }
+
   .footer-contacts p {
     display: none;
   }
 
   .footer-contacts__button {
+    padding: 21px 24px 16px 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1804,19 +1895,31 @@ button {
   }
 
   .footer-contacts__list {
-    padding: 15px 0 15px 24px;
+    padding: 0 0 15px 25px;
   }
 
   .footer-contacts__item {
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+  }
+
+  .footer-contacts__item a,
+  .footer-contacts__item span {
+    font-size: 14px;
+    line-height: 135%;
   }
 
   .footer-wrapper {
-    padding-top: 35px;
+    padding-top: 34px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .header-wrapper {
+    padding: 15px 0 15px 2px;
   }
 
   .header-logo img {
@@ -1847,6 +1950,7 @@ button {
     padding: 12px 38px;
     font-size: 14px;
     line-height: 16px;
+    margin-left: 0;
   }
 
   .hero-link__text-tablet {

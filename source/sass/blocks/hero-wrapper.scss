@@ -81,9 +81,14 @@
   line-height: 21px;
   padding: 18px 28px;
 
+  @media (max-width: 1023px) {
+    margin-left: 44px;
+  }
+
   @media (max-width: 767px) {
     padding: 12px 38px;
     font-size: 14px;
     line-height: 16px;
+    margin-left: 0;
   }
 }
