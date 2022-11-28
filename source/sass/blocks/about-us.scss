@@ -1,6 +1,7 @@
 .about-us {
   display: flex;
-  margin-bottom: 99px;
+  margin-bottom: 104px;
+  background-color: #ffffff;
 
   @media (max-width: 1023px) {
     margin-bottom: 80px;
@@ -81,7 +82,7 @@
   background: inherit;
   border: 1px solid #00b2ff;
   border-radius: 3px;
-  padding: 13px 49px;
+  padding: 14px 51px;
   margin-top: 16px;
   margin-bottom: 0;
 
@@ -98,7 +99,12 @@
 }
 
 .about-us__info-description span {
-  display: inline;
+  margin-top: -4px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 
   @media (max-width: 767px) {
     display: none;

@@ -1,6 +1,6 @@
 .products {
   background: #041827;
-  padding-top: 67px;
+  padding-top: 63px;
   padding-bottom: 140px;
 
   @media (max-width: 1023px) {
@@ -20,6 +20,8 @@
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
   color: #ffffff;
   margin-bottom: 55px;
 
@@ -123,12 +125,13 @@
   grid-row: 1/-1;
   z-index: 1;
   padding: 0;
-  margin: 50px 40px 60px 40px;
+  margin: 47px 40px 60px 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
   font-size: 20px;
+  line-height: 30px;
 
   @media (max-width: 767px) {
     font-size: 18px;

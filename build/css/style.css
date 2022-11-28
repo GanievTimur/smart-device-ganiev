@@ -97,6 +97,10 @@
   margin-right: 0;
 }
 
+.header__contacts-item {
+  margin-right: 7px;
+}
+
 .header__contacts-item a {
   position: relative;
   text-decoration: none;
@@ -116,8 +120,7 @@
 }
 
 .header__contacts-item:first-child {
-  margin-right: 22px;
-  padding-left: 8px;
+  padding-left: 2px;
 }
 
 .header__contacts-link-mail::before {
@@ -333,6 +336,7 @@ button {
 
 .footer {
   background: #041827;
+  padding-top: 48px;
 }
 
 .footer__menu-closed button::after {
@@ -362,6 +366,7 @@ button {
 
 .advantage {
   margin-bottom: 120px;
+  background-color: #ffffff;
 }
 
 .advantage__list {
@@ -400,7 +405,7 @@ button {
 
 .advantage__item svg {
   fill: #00b2ff;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 
 .advantage__item::before {
@@ -439,7 +444,8 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 99px;
+  margin-bottom: 104px;
+  background-color: #ffffff;
 }
 
 .about-us img {
@@ -483,7 +489,7 @@ button {
   background: inherit;
   border: 1px solid #00b2ff;
   border-radius: 3px;
-  padding: 13px 49px;
+  padding: 14px 51px;
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -494,7 +500,12 @@ button {
 }
 
 .about-us__info-description span {
-  display: inline;
+  margin-top: -4px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .about-us__info .about-us__info-description-drop-info {
@@ -503,7 +514,7 @@ button {
 
 .products {
   background: #041827;
-  padding-top: 67px;
+  padding-top: 63px;
   padding-bottom: 140px;
 }
 
@@ -513,6 +524,8 @@ button {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
   color: #ffffff;
   margin-bottom: 55px;
 }
@@ -593,12 +606,13 @@ button {
   grid-row: 1/-1;
   z-index: 1;
   padding: 0;
-  margin: 50px 40px 60px 40px;
+  margin: 47px 40px 60px 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #ffffff;
   font-size: 20px;
+  line-height: 30px;
 }
 
 .products__wrapper {
@@ -667,7 +681,7 @@ button {
 
 .feedback__form-wrapper {
   z-index: 2;
-  width: initial;
+  width: 48.7%;
 }
 
 .modal {
@@ -1133,7 +1147,7 @@ button {
 }
 
 .hero-wrapper {
-  padding-top: 15.9%;
+  padding-top: 15.8%;
   padding-left: 6.5%;
   padding-bottom: 14.5%;
 }
@@ -1161,6 +1175,7 @@ button {
   line-height: 155%;
   width: 60%;
   margin-bottom: 44px;
+  font-size: 22px;
 }
 
 .hero-wrapper a {
