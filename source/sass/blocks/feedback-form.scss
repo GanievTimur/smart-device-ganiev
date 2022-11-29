@@ -3,8 +3,8 @@
   column-gap: 30px;
   row-gap: 20px;
   padding-right: 8px;
-  grid-template-columns: 1fr 1fr;
-  min-width: 575px;
+  grid-template-columns: 47% 48%;
+  min-width: 460px;
 
   @media (max-width: 1023px) {
     padding-right: 0;
@@ -59,7 +59,7 @@
   color: #ffffff;
   margin-left: 5px;
   margin-top: 0;
-  min-width: 265px;
+  width: 95%;
   padding: 13px 15px;
 
   &:hover {
