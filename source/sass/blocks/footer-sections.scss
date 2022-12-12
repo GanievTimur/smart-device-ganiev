@@ -70,6 +70,7 @@
 
 .footer-sections__item {
   margin-bottom: 6px;
+  max-width: 250px;
 
   @media (max-width: 1023px) {
     margin-bottom: 5.5px;
@@ -104,8 +105,7 @@
   }
 }
 
-.footer__menu-closed .footer-sections__list-no--js,
-.footer__menu-closed .footer-contacts__list-no--js {
+.footer-sections .footer-sections__list--no-js {
   @media (max-width: 767px) {
     display: block;
   }

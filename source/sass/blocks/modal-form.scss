@@ -3,6 +3,10 @@
 
   & textarea {
     padding: 22px 14px;
+
+    @media (max-height: 760px) {
+      padding: 6px;
+    }
   }
 }
 

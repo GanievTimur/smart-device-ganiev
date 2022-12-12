@@ -12,11 +12,11 @@
     <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
-  <body>
+  <body class="page-body">
 
     <header class="header">
       <div class="header-wrapper container">
-        <a href="./index.html" class="header-logo">
+        <div class="header-logo">
           <picture>
             <source media="(min-width: 0)" type="image/webp" srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x">
             <img src="./img/logo.png" srcset="./img/logo@x2.png 2x" alt="Логотип магазина" width="215" height="55">
@@ -24,7 +24,7 @@
           <svg width="35" height="35">
             <use href="../img/sprite/sprite.svg#mobile-logo"></use>
           </svg>
-        </a>
+        </div>
         <ul class="header__contacts-list">
           <li class="header__contacts-item">
             <a href="mailto:info@sd.ru" class="header__contacts-link-mail"><span>info@sd.ru</span></a>
@@ -39,7 +39,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="page-main">
       <section class="hero">
         <picture>
           <source media="(min-width: 0)" type="image/webp" srcset="./img/main-background-image.webp 1x, ./img/main-background-image@2x.webp 2x">
@@ -59,14 +59,14 @@
               <use href="../img/sprite/sprite.svg#stopwatch-icon"></use>
             </svg>
             <h2 class="advantage__title">Оперативные сроки</h2>
-            <p class="advantage__description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+            <p class="advantage__description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
           </li>
           <li class="advantage__item">
             <svg width="35" height="35">
               <use href="../img/sprite/sprite.svg#hired-icon"></use>
             </svg>
             <h2 class="advantage__title">Крупные поставщики</h2>
-            <p class="advantage__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
+            <p class="advantage__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.
             </p>
           </li>
           <li class="advantage__item advantage__item-card">
@@ -74,7 +74,7 @@
               <use href="../img/sprite/sprite.svg#detective-icon"></use>
             </svg>
             <h2 class="advantage__title">Полная конфиденциальность</h2>
-            <p class="advantage__description">По желанию клиента мы обеспечиваем полную конфиденциальность.
+            <p class="advantage__description">По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.
             </p>
           </li>
           <li class="advantage__item advantage__item-card">
@@ -82,7 +82,7 @@
               <use href="../img/sprite/sprite.svg#tag-icon"></use>
             </svg>
             <h2 class="advantage__title">Персонализация стоимости</h2>
-            <p class="advantage__description">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
+            <p class="advantage__description">Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.
             </p>
           </li>
         </ul>
@@ -95,10 +95,10 @@
         </picture>
         <div class="about-us__info">
           <h2 class="about-us__info-title">О компании</h2>
-          <p class="about-us__info-description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-          <p class="about-us__info-description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span>Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
-          <p class="about-us__info-description about-us__info-description-drop-info visually-hidden">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.
-            Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+          <p class="about-us__info-description">Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
+          <p class="about-us__info-description">Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. <span>Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span></p>
+          <p class="about-us__info-description about-us__info-description-drop-info visually-hidden">Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.
+            Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
           <button type="button" class="about-us__info-button">Подробнее</button>
         </div>
       </section>
@@ -159,7 +159,7 @@
               </fieldset>
               <fieldset class="feedback-form__phone form__phone">
                 <label for="phone-form" class="visually-hidden">Поле ввода номера телефона</label>
-                <input type="tel" name="phone" class="feedback-form__phone-button" id="phone-form" data-mask="+7 (000) 000-00-00" placeholder="Телефон" required>
+                <input type="tel" name="phone" class="feedback-form__phone-button" id="phone-form" data-mask="+7 (000) 000-00-00" placeholder="Телефон" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
               </fieldset>
               <fieldset class="feedback-form__textarea form__textarea">
                 <label for="textarea-form" class="visually-hidden">Поле ввода вашего вопроса</label>
@@ -169,7 +169,7 @@
                 <button type="submit" class="feedback-form__button-submit">Задать вопрос</button>
               </div>
               <div class="feedback-form__button-checkbox button-checkbox">
-                <input class="checkbox-button" type="checkbox" name="checkbox" id="checkbox-form" required>
+                <input class="checkbox-button visually-hidden" type="checkbox" name="checkbox" id="checkbox-form" required>
                 <span></span>
                 <label for="checkbox-form">Я согласен на обработку<br>персональных данных</label>
               </div>
@@ -183,12 +183,12 @@
     <footer class="footer">
       <div class="footer-wrapper">
         <div class="footer-social">
-          <a href="./index.html" class="footer-social__logo">
+          <div class="footer-social__logo">
             <picture>
               <source media="(min-width: 0)" type="image/webp" srcset="./img/logo.webp 1x, ./img/logo@2x.webp 2x">
               <img src="./img/logo.png" srcset="./img/logo@x2.png 2x" alt="Логотип магазина" width="215" height="55">
             </picture>
-          </a>
+          </div>
           <div class="footer-social__links">
             <ul class="footer-social__links-list">
               <li class="footer-social__links-item">
@@ -243,34 +243,36 @@
       </div>
     </footer>
 
-    <div class="modal visually-hidden">
-      <div class="modal-wrapper">
-        <h2 class="modal-title">Закажите звонок</h2>
-        <p class="modal-info">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-        <form action="#" method="post" class="modal-form form">
-          <fieldset class="modal-form__username form__username">
-            <label for="modal-name-form" class="visually-hidden">Поле ввода имени</label>
-            <input type="text" name="modal-name" class="modal-form__username-button" id="modal-name-form" placeholder="Имя" required>
-          </fieldset>
-          <fieldset class="modal-form__phone form__phone">
-            <label for="modal-phone-form" class="visually-hidden">Поле ввода номера телефона</label>
-            <input type="tel" name="modal-phone" class="modal-form__phone-button" id="modal-phone-form" data-mask="+7 (000) 000-00-00" placeholder="Телефон" required>
-          </fieldset>
-          <fieldset class="modal-form__textarea form__textarea">
-            <label for="modal-textarea-form" class="visually-hidden">Поле ввода вашего вопроса</label>
-            <textarea name="modal-textarea" cols="30" rows="5" id="modal-textarea-form" placeholder="Ваш вопрос"></textarea>
-          </fieldset>
-          <div class="modal-form__button form__button">
-            <button type="submit" class="modal-form__button-submit">Отправить</button>
-          </div>
-          <div class="modal-form__button-checkbox form__button-checkbox">
-            <input class="checkbox-button" type="checkbox" name="checkbox" id="modal-checkbox-form" required>
-            <span></span>
-            <label for="modal-checkbox-form">Я согласен на обработку персональных данных</label>
-          </div>
-        </form>
+    <div class="modal__container visually-hidden">
+      <div class="modal" tabindex="0">
+        <div class="modal-wrapper">
+          <h2 class="modal-title">Закажите звонок</h2>
+          <p class="modal-info">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+          <form action="#" method="post" class="modal-form form">
+            <fieldset class="modal-form__username form__username">
+              <label for="modal-name-form" class="visually-hidden">Поле ввода имени</label>
+              <input type="text" name="modal-name" class="modal-form__username-button" id="modal-name-form" placeholder="Имя" required>
+            </fieldset>
+            <fieldset class="modal-form__phone form__phone">
+              <label for="modal-phone-form" class="visually-hidden">Поле ввода номера телефона</label>
+              <input type="tel" name="modal-phone" class="modal-form__phone-button" id="modal-phone-form" data-mask="+7 (000) 000-00-00" placeholder="Телефон" required>
+            </fieldset>
+            <fieldset class="modal-form__textarea form__textarea">
+              <label for="modal-textarea-form" class="visually-hidden">Поле ввода вашего вопроса</label>
+              <textarea name="modal-textarea" cols="30" rows="5" id="modal-textarea-form" placeholder="Ваш вопрос"></textarea>
+            </fieldset>
+            <div class="modal-form__button form__button">
+              <button type="submit" class="modal-form__button-submit">Отправить</button>
+            </div>
+            <div class="modal-form__button-checkbox form__button-checkbox">
+              <input class="checkbox-button" type="checkbox" name="checkbox" id="modal-checkbox-form" required>
+              <span></span>
+              <label for="modal-checkbox-form">Я согласен на обработку персональных данных</label>
+            </div>
+          </form>
+        </div>
+        <button type="button" class="modal__button-close"><span class="visually-hidden">Кнопка закрытия модального окна</span></button>
       </div>
-      <button type="button" class="modal__button-close"><span class="visually-hidden">Кнопка закрытия модального окна</span></button>
     </div>
 
     <script src="js/vendor.min.js"></script>

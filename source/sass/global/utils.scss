@@ -32,6 +32,10 @@
 .form__phone input {
   padding: 15px;
 
+  @media (max-height: 760px) {
+    padding: 6px;
+  }
+
   @media (max-width: 1023px) {
     padding: 13px 12px;
   }

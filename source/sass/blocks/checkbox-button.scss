@@ -9,3 +9,7 @@
   width: 10px;
   height: 7px;
 }
+
+.checkbox-button:focus-visible + span {
+  border: 2px solid #041427;
+}

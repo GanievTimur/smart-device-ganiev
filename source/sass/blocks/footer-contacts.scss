@@ -63,6 +63,12 @@
   }
 }
 
+.footer-contacts .footer-contacts__list--no-js {
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
 .footer-contacts__list {
   padding: 0;
   margin: 0;
@@ -93,5 +99,12 @@
   @media (max-width: 767px) {
     font-size: 14px;
     line-height: 135%;
+  }
+}
+
+.footer-contacts__item a:hover {
+  &:hover {
+    color: #00b2ff;
+    transition: 0.3s;
   }
 }

@@ -1,5 +1,7 @@
 .header__button-wrapper {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   vertical-align: middle;
 
   @media (max-width: 1023px) {

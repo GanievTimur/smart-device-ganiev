@@ -47,27 +47,82 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Modal
 
+const pageBody = document.querySelector('.page-body');
 const modalOpenButton = document.querySelector('.header-button');
-const modal = document.querySelector('.modal');
+const modal = document.querySelector('.modal__container');
 const modalCloseButton = document.querySelector('.modal__button-close');
 const modalNameInput = document.querySelector('.modal-form__username-button');
+const modalContent = document.querySelector('.modal');
 
 if (modal) {
   modalOpenButton.addEventListener('click', () => {
-    if (modal.classList.contains('modal')) {
+    modalContent.focus();
+    let focusableElementsString = 'input:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+    let focusableElements = modalContent.querySelectorAll(focusableElementsString);
+    focusableElements = Array.prototype.slice.call(focusableElements);
+    let firstTabStop = focusableElements[0];
+    let lastTabStop = focusableElements[focusableElements.length - 1];
+    firstTabStop.focus();
+    modal.addEventListener('keydown', function(e) {
+      if (e.keyCode === 9) {
+        if (e.shiftKey) {
+          if (document.activeElement === firstTabStop) {
+            e.preventDefault();
+            lastTabStop.focus();
+          }
+        } else {
+          if (document.activeElement === lastTabStop) {
+            e.preventDefault();
+            firstTabStop.focus();
+          }
+        }
+      }
+    });
+
+    if (modal.classList.contains('modal__container')) {
       if (modal.classList.contains('visually-hidden')) {
         modal.classList.remove('visually-hidden');
+        pageBody.classList.add('scroll-hidden');
         modalNameInput.focus();
       }
     }
   });
 
+  // modalOpenButton.addEventListener('click', () => {
+  //   modal.focus();
+  //   if (modal.classList.contains('modal__container')) {
+  //     if (modal.classList.contains('visually-hidden')) {
+  //       modal.classList.remove('visually-hidden');
+  //       pageBody.classList.add('scroll-hidden');
+  //       modalNameInput.focus();
+  //     }
+  //   }
+  // });
+
   modalCloseButton.addEventListener('click', () => {
-    if (modal.classList.contains('modal')) {
+    if (modal.classList.contains('modal__container')) {
       modal.classList.add('visually-hidden');
+      pageBody.classList.remove('scroll-hidden');
     }
   });
+
+//Закрытие модального окна при нажатии на затемненную область
+  modal.addEventListener('click', (e) => {
+    if(!e.target.closest('.modal')) {
+      modal.classList.add('visually-hidden');
+      pageBody.classList.remove('scroll-hidden');
+    }
+  });
+//Закрытие модального окна при нажатии на ESC
+  document.body.addEventListener('keyup', function (e) {
+    var key = e.keyCode;
+    if (key == 27) {
+      modal.classList.add('visually-hidden');
+      pageBody.classList.remove('scroll-hidden');
+    };
+  });
 }
+
 
 function FormMasked() {
   const maskedInputs = document.querySelectorAll('[data-mask]');
@@ -106,12 +161,12 @@ function FormMasked() {
 
     this.value = newValue;
   }
-
-  function maskOutput() {
-    if ((this.value.length - 7) < 11) {
-      this.value = '';
-    }
-  }
+  // Отчистка поля ввода после некорректного формата номера телефона
+  // function maskOutput() {
+  //   if ((this.value.length - 7) < 11) {
+  //     this.value = '';
+  //   }
+  // }
 }
 
 document.addEventListener('DOMContentLoaded', () => {

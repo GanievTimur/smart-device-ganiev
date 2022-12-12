@@ -1,8 +1,9 @@
 .header-logo {
   display: flex;
+  min-width: 215px;
 
-  &:hover {
-    opacity: 0.7;
+  @media (max-width: 767px) {
+    min-width: 35px;
   }
 
   & img {

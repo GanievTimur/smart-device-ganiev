@@ -12,6 +12,10 @@
     font-size: 30px;
     line-height: 140.62%;
     color: #ffffff;
+
+    @media (max-height: 760px) {
+      font-size: 20px;
+    }
   }
 
   & p {
@@ -24,5 +28,11 @@
     font-size: 16px;
     line-height: 22px;
     color: #ffffff;
+
+    @media (max-height: 760px) {
+      font-size: 11px;
+      line-height: 15px;
+      margin: 0 0 12px;
+    }
   }
 }
