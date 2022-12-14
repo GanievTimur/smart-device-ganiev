@@ -7,19 +7,14 @@
   border-radius: 3px;
   max-width: 500px;
   z-index: 10;
+  overflow: auto;
+  height: -webkit-fill-available;
+  max-height: 610px;
 
   & fieldset {
     padding: 0;
     border: 0;
     margin-bottom: 20px;
-
-    @media (max-height: 760px) {
-      margin-bottom: 10px;
-    }
-  }
-
-  @media (max-height: 760px) {
-    top: 5%;
   }
 }
 

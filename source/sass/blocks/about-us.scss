@@ -1,6 +1,6 @@
 .about-us {
   display: flex;
-  margin-bottom: 104px;
+  margin-bottom: 102px;
   background-color: #ffffff;
 
   @media (max-width: 1023px) {
@@ -57,7 +57,7 @@
   font-style: normal;
   font-weight: 400;
   color: #041827;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 
   @media (max-width: 1023px) {
     line-height: 22px;
@@ -87,7 +87,7 @@
   border: 1px solid #00b2ff;
   border-radius: 3px;
   padding: 14px 51px;
-  margin-top: 16px;
+  margin-top: 21px;
   margin-bottom: 0;
 
   &:hover {

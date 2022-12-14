@@ -3,10 +3,6 @@
 
   & textarea {
     padding: 22px 14px;
-
-    @media (max-height: 760px) {
-      padding: 6px;
-    }
   }
 }
 
@@ -33,10 +29,6 @@
   display: flex;
   align-items: center;
   margin-left: 11px;
-
-  & input {
-    display: none;
-  }
 }
 
 .modal-form__button-checkbox label {

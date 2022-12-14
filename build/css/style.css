@@ -97,10 +97,11 @@
   width: 41%;
   padding-top: 10px;
   margin-right: 0;
+  padding-right: 6px;
 }
 
 .header__contacts-item {
-  margin-right: 7px;
+  margin-bottom: 5px;
 }
 
 .header__contacts-item a {
@@ -119,10 +120,6 @@
 .header__contacts-link-phone span {
   display: inline-block;
   vertical-align: middle;
-}
-
-.header__contacts-item:first-child {
-  padding-left: 2px;
 }
 
 .header__contacts-link-mail::before {
@@ -473,7 +470,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 104px;
+  margin-bottom: 102px;
   background-color: #ffffff;
 }
 
@@ -504,7 +501,7 @@ button {
   font-style: normal;
   font-weight: 400;
   color: #041827;
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 }
 
 .about-us__info button {
@@ -519,7 +516,7 @@ button {
   border: 1px solid #00b2ff;
   border-radius: 3px;
   padding: 14px 51px;
-  margin-top: 16px;
+  margin-top: 21px;
   margin-bottom: 0;
 }
 
@@ -722,6 +719,9 @@ button {
   border-radius: 3px;
   max-width: 500px;
   z-index: 10;
+  overflow: auto;
+  height: -webkit-fill-available;
+  max-height: 610px;
 }
 
 .modal fieldset {
@@ -913,7 +913,7 @@ button {
   height: 7px;
 }
 
-.checkbox-button:focus-visible + span {
+.checkbox-button:focus + span {
   border: 2px solid #041427;
 }
 
@@ -1166,6 +1166,7 @@ button {
 }
 
 .header__button-wrapper {
+  max-width: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1221,7 +1222,7 @@ button {
   color: #f2f5f7;
   line-height: 155%;
   width: 60%;
-  margin-bottom: 44px;
+  margin-bottom: 46px;
   font-size: 22px;
 }
 
@@ -1322,10 +1323,6 @@ button {
   margin-left: 11px;
 }
 
-.modal-form__button-checkbox input {
-  display: none;
-}
-
 .modal-form__button-checkbox label {
   padding-left: 25px;
   font-family: "PT Mono", "Courier New", monospace;
@@ -1349,7 +1346,7 @@ button {
 
 .header-button {
   padding: 10px 17px;
-  margin-right: 60px;
+  margin-right: 59px;
   margin-top: 6px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -1431,6 +1428,7 @@ button {
   }
 
   .header__contacts-list {
+    min-width: 104px;
     width: auto;
     padding-top: 4px;
     margin-right: 6px;
@@ -1439,10 +1437,6 @@ button {
   .header__contacts-link-mail span,
   .header__contacts-link-phone span {
     display: none;
-  }
-
-  .header__contacts-item:first-child {
-    margin-right: 24px;
   }
 
   .hero {
@@ -1526,11 +1520,11 @@ button {
 
   .products__item:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 
   .products__item {
-    max-width: 670px;
+    width: 100%;
   }
 
   .products__link h3 {
@@ -1538,7 +1532,7 @@ button {
   }
 
   .products__link-image {
-    width: 670px;
+    width: 100%;
     height: 250px;
     -o-object-fit: cover;
     object-fit: cover;
@@ -1692,15 +1686,8 @@ button {
 
   .header__contacts-list {
     padding-top: 0;
-    margin-right: 5px;
-  }
-
-  .header__contacts-item {
     margin-right: 0;
-  }
-
-  .header__contacts-item:first-child {
-    margin-right: 22px;
+    min-width: 100px;
   }
 
   .hero {
@@ -1862,6 +1849,7 @@ button {
   .feedback-form__button button {
     min-width: 100%;
     margin-top: -2px;
+    padding: 13px 15px;
   }
 
   .feedback-form__button-checkbox {
@@ -1880,7 +1868,7 @@ button {
     -ms-flex-direction: column;
     flex-direction: column;
     margin: 0 auto;
-    margin-bottom: 19px;
+    margin-bottom: 22px;
     width: 85%;
   }
 
@@ -1953,11 +1941,12 @@ button {
   }
 
   .footer-contacts__list {
-    padding: 0 0 15px 25px;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7019607843);
+    padding: 0 0 9px 25px;
   }
 
   .footer-contacts__item {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 
   .footer-contacts__item a,
@@ -1982,6 +1971,7 @@ button {
 
   .header-logo {
     min-width: 35px;
+    margin-right: 20px;
   }
 
   .header-logo img {
@@ -2021,34 +2011,5 @@ button {
 
   .hero-link__text-mobile {
     display: block;
-  }
-}
-
-@media (max-height: 760px) {
-  .form__username input,
-  .form__phone input {
-    padding: 6px;
-  }
-
-  .modal fieldset {
-    margin-bottom: 10px;
-  }
-
-  .modal {
-    top: 5%;
-  }
-
-  .modal-wrapper h2 {
-    font-size: 20px;
-  }
-
-  .modal-wrapper p {
-    font-size: 11px;
-    line-height: 15px;
-    margin: 0 0 12px;
-  }
-
-  .modal-form__textarea textarea {
-    padding: 6px;
   }
 }
